@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors Example</title>
+    <style>
+        /* Element Selector */
+        h1 {
+            color: navy;
+            font-size: 2em;
+        }
+        
+        /* Class Selector */
+        .highlight {
+            background-color: yellow;
+            font-weight: bold;
+        }
+        
+        /* ID Selector */
+        #unique-item {
+            color: green;
+            font-size: 1.5em;
+        }
+        
+        /* Attribute Selector */
+        a[href^="https://"] {
+            color: red;
+        }
+        
+        /* Pseudo-class Selector */
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Pseudo-element Selector */
+        p::first-line {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Selectors Example</h1>
+    
+    <p>This paragraph is styled with a <span class="highlight">class selector</span>.</p>
+    
+    <p id="unique-item">This paragraph is styled with an <span id="unique-item">ID selector</span>.</p>
+    
+    <p>Visit <a href="https://www.example.com">Example</a> for more information.</p>
+    <p>Visit <a href="http://www.example.com">Example (Non-secure)</a> for more information.</p>
+    
+    <p>Hover over this text to see the <span class="highlight">pseudo-class effect</span>.</p>
+</body>
+</html>

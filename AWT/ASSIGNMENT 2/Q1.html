@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylesheet Priority Example</title>
+    
+    <!-- Level 1: External CSS -->
+    <link rel="stylesheet" href="styles/base.css">
+    
+    <!-- Level 2: External CSS with higher specificity -->
+    <link rel="stylesheet" href="styles/theme.css">
+    
+    <!-- Level 3: Internal CSS (in the head of the document) -->
+    <style>
+        body {
+            background-color: lightgrey;
+        }
+        h1 {
+            color: darkblue;
+        }
+    </style>
+    
+    <!-- Level 4: Inline CSS (applied directly to elements) -->
+    <style>
+        .inline-style {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="inline-style">Hello, World!</h1>
+    <p class="inline-style">This is a paragraph with inline styling.</p>
+</body>
+</html>
