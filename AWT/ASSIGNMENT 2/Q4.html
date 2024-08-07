@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Style Properties</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        ul {
+            margin: 20px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        ol {
+            margin: 20px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+
+        /* Unordered List Styles */
+        .ul-disk {
+            list-style-type: disc;
+        }
+        .ul-circle {
+            list-style-type: circle;
+        }
+        .ul-square {
+            list-style-type: square;
+        }
+        .ul-none {
+            list-style-type: none;
+        }
+        .ul-image {
+            list-style-type: none;
+            padding-left: 40px;
+            background: url('https://via.placeholder.com/15') no-repeat left center;
+        }
+
+        /* Ordered List Styles */
+        .ol-decimal {
+            list-style-type: decimal;
+        }
+        .ol-upper-alpha {
+            list-style-type: upper-alpha;
+        }
+        .ol-lower-alpha {
+            list-style-type: lower-alpha;
+        }
+        .ol-upper-roman {
+            list-style-type: upper-roman;
+        }
+        .ol-lower-roman {
+            list-style-type: lower-roman;
+        }
+
+        /* List Style Position */
+        .list-position-inside {
+            list-style-position: inside;
+        }
+        .list-position-outside {
+            list-style-position: outside;
+        }
+    </style>
+</head>
+<body>
+    <h1>List Style Properties Demonstration</h1>
+
+    <h2>Unordered Lists</h2>
+    <ul class="ul-disk">
+        <li>Item with disc bullet</li>
+        <li>Another item</li>
+    </ul>
+
+    <ul class="ul-circle">
+        <li>Item with circle bullet</li>
+        <li>Another item</li>
+    </ul>
+
+    <ul class="ul-square">
+        <li>Item with square bullet</li>
+        <li>Another item</li>
+    </ul>
+
+    <ul class="ul-none">
+        <li>Item without bullet</li>
+        <li>Another item</li>
+    </ul>
+
+    <ul class="ul-image">
+        <li>Item with custom image bullet</li>
+        <li>Another item</li>
+    </ul>
+
+    <h2>Ordered Lists</h2>
+    <ol class="ol-decimal">
+        <li>Item with decimal numbering</li>
+        <li>Another item</li>
+    </ol>
+
+    <ol class="ol-upper-alpha">
+        <li>Item with uppercase alphabetic numbering</li>
+        <li>Another item</li>
+    </ol>
+
+    <ol class="ol-lower-alpha">
+        <li>Item with lowercase alphabetic numbering</li>
+        <li>Another item</li>
+    </ol>
+
+    <ol class="ol-upper-roman">
+        <li>Item with uppercase Roman numerals</li>
+        <li>Another item</li>
+    </ol>
+
+    <ol class="ol-lower-roman">
+        <li>Item with lowercase Roman numerals</li>
+        <li>Another item</li>
+    </ol>
+
+    <h2>List Style Position</h2>
+    <ul class="list-position-inside">
+        <li>Item with list position inside</li>
+        <li>Another item</li>
+    </ul>
+
+    <ul class="list-position-outside">
+        <li>Item with list position outside</li>
+        <li>Another item</li>
+    </ul>
+</body>
+</html>
