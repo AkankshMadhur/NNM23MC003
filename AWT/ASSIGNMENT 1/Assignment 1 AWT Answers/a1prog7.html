@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+</head>
+<body>
+    <!-- Main Heading -->
+    <h1>Student Registration Form</h1>
+    
+    <!-- Registration Form -->
+    <form action="#" method="post">
+        <!-- Personal Information Section -->
+        <fieldset>
+            <legend>Personal Information</legend>
+            
+            <!-- First Name Input -->
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" name="first_name" required><br><br>
+
+            <!-- Last Name Input -->
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" name="last_name" required><br><br>
+
+            <!-- Email Input -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <!-- Gender Selection -->
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select><br><br>
+
+            <!-- Date of Birth Input -->
+            <label for="birthdate">Date of Birth:</label>
+            <input type="date" id="birthdate" name="birthdate" required><br><br>
+        </fieldset>
+
+        <!-- Previous Educational Details Section -->
+        <fieldset>
+            <legend>Previous Educational Details</legend>
+            
+            <!-- Previous School Input -->
+            <label for="previous_school">Previous School:</label>
+            <input type="text" id="previous_school" name="previous_school"><br><br>
+
+            <!-- Year of Graduation Input -->
+            <label for="graduation_year">Year of Graduation:</label>
+            <input type="number" id="graduation_year" name="graduation_year"><br><br>
+
+            <!-- Major/Stream Input -->
+            <label for="major">Major/Stream:</label>
+            <input type="text" id="major" name="major"><br><br>
+
+            <!-- GPA/Percentage Input -->
+            <label for="gpa">GPA/Percentage:</label>
+            <input type="text" id="gpa" name="gpa"><br><br>
+
+            <!-- Additional Comments Input -->
+            <label for="comments">Additional Comments:</label>
+            <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+        </fieldset>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+
