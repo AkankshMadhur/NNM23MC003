@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Type Conversion in JavaScript</title>
+
+</head>
+<style>
+
+</style>
+<body>
+    <h1>Type Conversion in JavaScript</h1>
+    
+    <p>Implicit Conversion:</p>
+    <p id="implicit-output" class="result"></p>
+
+    <p>Explicit Conversion:</p>
+    <p id="explicit-output" class="result"></p>
+
+    <script>
+        
+        let implicitNumber = "10";
+        let implicitResult = implicitNumber * 2; 
+        document.getElementById("implicit-output").innerText = 
+            `Original value (string): "${implicitNumber}" ➔ After multiplication (number): ${implicitResult}`;
+
+        
+        let explicitString = "20";
+        let explicitResult = Number(explicitString) + 5; 
+        document.getElementById("explicit-output").innerText = 
+            `Original value (string): "${explicitString}" ➔ After addition (number): ${explicitResult}`;
+    </script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Object Properties and Methods</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .output {
+            margin: 10px 0;
+        }
+
+        .label {
+            font-weight: bold;
+        }
+    </style>
+</head>
+1
+<body>
+    <h1>JavaScript String Object Properties and Methods</h1>
+    <div id="results">
+        <!-- Results will be displayed here -->
+    </div>
+
+    <script>
+        // Example string
+        let str = "JavaScript";
+
+        // 1. length Property
+        let lengthResult = `Length of the string: <span class="label">${str.length}</span>`;
+
+        // 2. charAt(index) Method
+        let charAtResult = `Character at index 4: <span class="label">${str.charAt(4)}</span>`;
+
+        // 3. concat(str1, str2, ...) Method
+        let concatResult = `Concatenated string: <span class="label">${str.concat(" is fun!")}</span>`;
+
+        // 4. toLowerCase() Method
+        let lowerCaseResult = `Lowercase string: <span class="label">${str.toLowerCase()}</span>`;
+
+        // 5. toUpperCase() Method
+        let upperCaseResult = `Uppercase string: <span class="label">${str.toUpperCase()}</span>`;
+
+        // 6. substring(start, end) Method
+        let substringResult = `Substring from index 4 to 10: <span class="label">${str.substring(4, 10)}</span>`;
+
+        // 7. indexOf(searchValue) Method
+        let indexOfResult = `Index of 'Script': <span class="label">${str.indexOf("Script")}</span>`;
+
+        // 8. replace(searchValue, newValue) Method
+        let replaceResult = `String after replacing 'Java' with 'TypeScript': <span class="label">${str.replace("Java", "TypeScript")}</span>`;
+
+        // Display results in the page
+        document.getElementById('results').innerHTML = `
+            <div class="output">${lengthResult}</div>
+            <div class="output">${charAtResult}</div>
+            <div class="output">${concatResult}</div>
+            <div class="output">${lowerCaseResult}</div>
+            <div class="output">${upperCaseResult}</div>
+            <div class="output">${substringResult}</div>
+            <div class="output">${indexOfResult}</div>
+            <div class="output">${replaceResult}</div>
+        `;
+    </script>
+</body>
+
+</html>
