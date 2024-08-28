@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Question7</title>
+    <meta name="description" content="A student registration form for enrolment to the course">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #2C3E50;
+        }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        fieldset {
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+        legend {
+            padding: 0 10px;
+            font-weight: bold;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input, select, textarea {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        textarea {
+            resize: vertical;
+        }
+        .submit-btn {
+            text-align: center;
+        }
+        .submit-btn input {
+            background-color: #2C3E50;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .submit-btn input:hover {
+            background-color: #1A252F;
+        }
+    </style>
+</head>
+<body>
+    <!--[if lt IE 7]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <h1>Student Registration Form</h1>
+    <form action="/submit_form" method="post">
+        <fieldset>
+            <legend>Personal Details</legend>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="">Select...</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Previous Educational Details</legend>
+            <label for="highschool">High School:</label>
+            <input type="text" id="highschool" name="highschool" required>
+
+            <label for="highschool-year">Year of Passing:</label>
+            <input type="number" id="highschool-year" name="highschool-year" min="1900" max="2100" required>
+
+            <label for="undergrad">Undergraduate College:</label>
+            <input type="text" id="undergrad" name="undergrad" required list="colleges">
+            <datalist id="colleges">
+                <option value="College A">
+                <option value="College B">
+                <option value="College C">
+                <option value="College D">
+            </datalist>
+
+            <label for="undergrad-year">Year of Passing:</label>
+            <input type="number" id="undergrad-year" name="undergrad-year" min="1900" max="2100" required>
+
+            <label for="remarks">Remarks:</label>
+            <textarea id="remarks" name="remarks" rows="4"></textarea>
+        </fieldset>
+
+        <div class="submit-btn">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+
+    <script src="" async defer></script>
+</body>
+</html>

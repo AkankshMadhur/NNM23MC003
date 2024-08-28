@@ -1,33 +1,27 @@
 <!DOCTYPE html>
-<html>
 <head>
-    <title>Type Conversion in JavaScript</title>
-
+    <title>Type Conversion Example</title>
 </head>
-<style>
-
-</style>
 <body>
-    <h1>Type Conversion in JavaScript</h1>
-    
-    <p>Implicit Conversion:</p>
-    <p id="implicit-output" class="result"></p>
 
-    <p>Explicit Conversion:</p>
-    <p id="explicit-output" class="result"></p>
+    <h1>JavaScript Type Conversion Example</h1>
+
+    <p id="implicit"></p>
+    <p id="explicit"></p>
 
     <script>
-        
-        let implicitNumber = "10";
-        let implicitResult = implicitNumber * 2; 
-        document.getElementById("implicit-output").innerText = 
-            `Original value (string): "${implicitNumber}" ➔ After multiplication (number): ${implicitResult}`;
+        // Implicit Conversion
+        let num = 10;
+        let str = "5";
+        let result = num + str; // Implicit conversion of num (10) to string
+        document.getElementById("implicit").innerText = `Implicit Conversion: 10 + "5" = ${result}`;
 
-        
-        let explicitString = "20";
-        let explicitResult = Number(explicitString) + 5; 
-        document.getElementById("explicit-output").innerText = 
-            `Original value (string): "${explicitString}" ➔ After addition (number): ${explicitResult}`;
+        // Explicit Conversion
+        let strNum = "20";
+        let convertedNum = Number(strNum); // Explicitly converting string to number
+        let sum = convertedNum + num;
+        document.getElementById("explicit").innerText = `Explicit Conversion: Number("20") + 10 = ${sum}`;
     </script>
+
 </body>
 </html>

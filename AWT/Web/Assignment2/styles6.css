@@ -1,0 +1,77 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #001f3f; /* Deep space blue */
+    color: #fff;
+}
+
+header {
+    background: #004d99; /* Darker blue for header */
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #ffffff;
+}
+
+.intro, .missions, .gallery, footer {
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    background: #003366; /* Slightly lighter blue */
+}
+
+.content {
+    text-align: center;
+}
+
+.highlight {
+    color: #ffcc00; /* Bright yellow for highlighting */
+    font-weight: bold;
+}
+
+.missions {
+    background: #002244; /* Even darker blue for missions */
+}
+
+.mission {
+    margin-bottom: 20px;
+}
+
+.mission-name {
+    color: #00ccff; /* Light cyan for mission names */
+    font-weight: bold;
+}
+
+.gallery {
+    text-align: center;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.caption {
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.link {
+    color: #ffcc00; /* Bright yellow link color */
+    text-decoration: underline;
+}
+
+.footer-content {
+    text-align: center;
+}

@@ -1,0 +1,44 @@
+/* Element Selector */
+h1 {
+    color: blue;
+}
+
+/* Class Selector */
+.highlight {
+    background-color: yellow;
+}
+
+/* ID Selector */
+#unique {
+    font-weight: bold;
+    color: red;
+}
+
+/* Descendant Selector */
+.container p {
+    color: green;
+}
+
+/* Attribute Selector */
+a[target="_blank"] {
+    color: orange;
+}
+
+a[title] {
+    text-decoration: underline;
+}
+
+.img1{
+    width: 100%;
+    height: auto;
+    display: block; 
+    margin: 0 auto; 
+    max-width: 100%;
+}
+
+#sec {
+    font-weight: bold;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: large;
+}

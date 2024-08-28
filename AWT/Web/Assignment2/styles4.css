@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f8ff;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #2c3e50;
+}
+
+.planning, .activities, .tips {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 1.8em;
+    color: #e74c3c;
+    border-bottom: 2px solid #e74c3c;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.packing-list {
+    list-style-type: disc; /* Bullet points */
+    padding-left: 20px;
+}
+
+.packing-list .item {
+    margin-bottom: 10px;
+}
+
+.activity-list {
+    list-style-type: decimal; /* Numbered list */
+    padding-left: 20px;
+}
+
+.tips-list {
+    list-style-type: square; /* Square bullets */
+    padding-left: 20px;
+}
+
+.tips-list li {
+    margin-bottom: 10px;
+}
+
+.tips-list li strong {
+    color: #3498db; /* Emphasize tips */
+}
+
+ul, ol {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-position: inside; /* Change bullet position */
+}
+
+ol {
+    list-style-position: outside; /* Change number position */
+}
