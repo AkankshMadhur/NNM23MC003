@@ -6,6 +6,8 @@ easy
 
 
 medium
+Substring palindrome
+
 
 hard
 1.GAS STATION
