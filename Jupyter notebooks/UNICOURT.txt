@@ -1,0 +1,12 @@
+easy
+1.find palindrome
+2.hamming code
+3.
+
+
+
+medium
+
+hard
+1.GAS STATION
+2.SPIRAL MATRIX
