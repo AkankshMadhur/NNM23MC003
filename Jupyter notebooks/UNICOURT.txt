@@ -1,8 +1,9 @@
 easy
 1.find palindrome
 2.hamming code
-3.
-
+3.buying and selling stock list sell on high and buy on low
+maximum subarray
+isomorphic string
 
 
 medium
